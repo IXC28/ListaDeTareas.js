@@ -16,7 +16,7 @@ const form =document.querySelector('#form')
 
 const TotalFunction =()=>{
 const totalCount = document.querySelector('ul').children.length;
-total.innerHTML =`  Total = ${0+totalCount}` ;
+total.innerHTML =`  Total = ${totalCount}` ;
 }
 
 const CompletedFunction =()=>{
@@ -80,7 +80,7 @@ localStorage.setItem('list', list.innerHTML);
  }
  getTarea();
 
- TotalityCount();
+
 
 list.addEventListener('click', e => {
     if (e.target.closest('.delete-btn')) {
@@ -102,7 +102,7 @@ list.addEventListener('click', e => {
         }
 
 });
-
+TotalityCount();
 
 //agregar arriba en una funcion , luego llamarla en varias partes del codigo
 
