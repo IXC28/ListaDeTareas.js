@@ -16,7 +16,7 @@ const form =document.querySelector('#form')
 
 const TotalFunction =()=>{
 const totalCount = document.querySelector('ul').children.length;
-total.innerHTML =`  Total = ${totalCount}`;
+total.innerHTML =`  Total = ${0+totalCount}` ;
 }
 
 const CompletedFunction =()=>{
