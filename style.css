@@ -1,0 +1,184 @@
+*,
+::before,
+::after {
+    box-sizing: border-box;
+    /* 1 */
+    border-width: 0;
+    /* 2 */
+    border-style: solid;
+    /* 2 */
+    border-color: #e5e7eb;
+    /* 2 */
+}
+
+body{
+    background-color: rgb(17, 0, 255);
+    font-family: 'Alkatra', 'cursive';
+    margin: 0;
+    /* 1 */
+    line-height: inherit;
+    /* 2 */
+    padding: 2rem;
+}
+h1,p{
+
+    font-family: 'Alkatra', 'cursive';
+}
+#title{
+text-align: center;
+background-color: #EABE3F ;
+border-radius: 2rem;
+border: 2rem;
+
+}
+
+
+ #add-container{
+margin-bottom: 1rem;
+    display: flex;
+    justify-content:center; 
+
+}
+
+#add-bar{
+
+    float: left;
+   
+width: 20rem;
+margin-right: 0.4rem;
+}
+#bar{
+height: 2rem;
+width: 20rem;
+border-radius: 0.6rem;
+
+}
+#add-button-container{
+    display: flex;
+      width: 3rem;
+    height: 2rem;
+    
+
+}
+
+#add-item{
+    width: 3rem;
+    height: 2rem;
+    cursor: pointer;
+}
+
+button{
+    border-radius: 0.5rem;
+}
+
+button:hover{
+    background-color: blueviolet;
+    transition: all 0.5s ease-in-out;
+    } 
+    
+
+            
+
+#lista-tareas {
+    height: 10rem;
+    background-color: rgb(255, 255, 255);
+    overflow: auto;
+border-radius: 0.5rem;
+}
+
+#lista-tareas ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+      }
+
+
+li{
+    border: solid 0.5px black;
+display: flex;
+justify-content: center;
+justify-content: space-between;
+
+}
+.delete-btn{
+width: 2rem;
+height: 2rem;
+background-color: white;
+}
+.delete-item{
+    border-radius: 0.5rem;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+
+.delete-btn:hover{
+    background-color: rgb(255, 0, 0);
+    transition: all 0.5s ease-in-out;
+
+}
+.check-btn{
+width: 2rem;
+height: 2rem;
+background-color: white;
+
+}
+.check-item{
+    border-radius: 0.2rem;
+    width: 100%;
+    height: 100%;
+   
+ cursor: pointer;
+ margin-right: 0.5rem;
+}
+
+.check-btn:hover{
+
+    background-color: rgb(30, 255, 0);
+    transition: all 0.5s ease-in-out;
+
+}
+
+#contadores{
+    display: flex;
+    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+#total{
+    background-color: yellow;
+    border-radius: 0.3rem;
+}
+#completed{
+    background-color: #00ee00;
+    border-radius: 0.3rem;
+}
+#incompleted{
+    background-color: red;
+    border-radius: 0.3rem;
+}
+.checkend{
+text-decoration: rgb(0, 0, 0) 2px solid line-through;
+opacity: 0.6;
+}
+.no-checkend{
+text-decoration: none;
+
+}
+.text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.none{
+    display: none;
+}
+@media (max-width:  425px) {
+    #bar{
+        width: 15rem;
+    }
+    
+}
