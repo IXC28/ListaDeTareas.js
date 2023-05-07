@@ -16,17 +16,17 @@ const form =document.querySelector('#form')
 
 const TotalFunction =()=>{
 const totalCount = document.querySelector('ul').children.length;
-total.innerHTML =`  Total = ${totalCount}` ;
+total.innerHTML =`Total=${totalCount}` ;
 }
 
 const CompletedFunction =()=>{
 const completeCount = document.querySelectorAll('.checkend').length;
- completed.innerHTML = `Complete = ${completeCount}`;
+ completed.innerHTML = `Complete=${completeCount}`;
 }
 
 const IncompletedFunction =()=>{
 const incompletedCount = document.querySelectorAll('.uncheckend').length; 
-incompleted.innerHTML= `Incomplete = ${incompletedCount}`
+incompleted.innerHTML= `Incomplete=${incompletedCount}`
 }
 
 
