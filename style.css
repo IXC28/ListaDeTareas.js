@@ -224,7 +224,7 @@ border: solid 1px rgb(30, 255, 0);
     border-radius: 0.3rem;
 }
 .checkend{
-text-decoration: rgb(255, 255, 255) 2px solid line-through;
+text-decoration: rgb(0, 0, 0) 2px solid line-through;
 opacity: 0.6;
 }
 .no-checkend{
@@ -240,6 +240,22 @@ text-decoration: none;
 .none{
     display: none;
 }
+
+
+.red {
+    border: 5px solid red;
+    box-shadow:rgba(255, 0, 0, 0.861) 0 0 15px 10px;
+
+;
+}
+
+.green {
+    border: 5px solid green;
+    box-shadow:rgba(64, 255, 0, 0.861) 0 0 15px 10px;
+
+ 
+}
+
 
 :disabled{
 opacity: 0.3;

@@ -11,7 +11,34 @@ let total = document.querySelector('#total');
 let completed = document.querySelector('#completed');
 let incompleted = document.querySelector('#incompleted');
 const text = document.querySelector('.text');
-const form =document.querySelector('#form')
+const form =document.querySelector('#form');
+
+
+
+
+const validateInput = (input) => {
+    if (input.value === '') {
+        addBtn.disabled = true;
+    } else {
+        addBtn.disabled = false;
+    }
+
+    if (input.value === '') {
+        input.classList.remove('red');
+        input.classList.remove('green');
+    } else if (input.value !== '') {
+        input.classList.remove('red');
+        input.classList.add('green');
+    } else {
+        input.classList.remove('green');
+        input.classList.add('red');
+    }
+}
+
+
+bar.addEventListener('input', e => {
+    validateInput(bar)
+});
 
 
 const TotalFunction =()=>{
@@ -37,7 +64,10 @@ IncompletedFunction();
 
 }
 
+
 TotalityCount();
+
+
 
 form.addEventListener('submit' , e =>{
 e.preventDefault();
@@ -69,6 +99,7 @@ const span = document.querySelector('span')
 span.classList.add('uncheckend')
 bar.value = '';
 TotalityCount();
+
 localStorage.setItem('list', list.innerHTML);
 
 
