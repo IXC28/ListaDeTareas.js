@@ -37,7 +37,7 @@ const validateInput = (input) => {
 
 
 bar.addEventListener('input', e => {
-    validateInput(bar)
+    validateInput(bar);
 });
 
 
@@ -99,6 +99,8 @@ const span = document.querySelector('span')
 span.classList.add('uncheckend')
 bar.value = '';
 TotalityCount();
+
+validateInput(bar);
 
 localStorage.setItem('list', list.innerHTML);
 
